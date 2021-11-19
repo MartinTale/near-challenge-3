@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +16,7 @@ html {
 
   background-color: var(--bg);
   color: var(--fg);
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-family: 'Grandstander', cursive;
   font-size: calc(0.9em + 0.5vw);
   line-height: 1.3;
 }
@@ -30,12 +32,76 @@ main {
 }
 
 h1 {
-  background-image: url(/logo-black.eab7a939.svg);
-  background-position: center 1em;
-  background-repeat: no-repeat;
-  background-size: auto 1.5em;
   margin-top: 0;
-  padding: 3.5em 0 0.5em;
+  text-align: center;
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000;
+  font-weight: normal;
+}
+
+h1 span {
+  text-decoration: line-through;
+}
+
+.accountId {
+  font-size: 0.5em;
+  display: block;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+ul.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+ul.user-list li {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 140px;
+  margin: 0 15px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 5px #000) drop-shadow(0px 0px 10px #000) drop-shadow(0px 0px 15px #000);
+}
+
+ul.user-list li img {
+  width: 100px;
+  height: 100px;
+}
+
+ul.user-list li strong {
+  color: #ccc;
+  font-size: 0.9em;
+  white-space: nowrap;
+  text-overflow: clip;
+  width: 100%;
+  text-align: center;
+}
+
+ul.user-list li small {
+  color: #999;
+  font-size: 0.75em;
+  white-space: nowrap;
+  text-overflow: clip;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  font-size: 4em;
+}
+
+p {
+  color: #ddd;
   text-align: center;
 }
 
@@ -178,9 +244,6 @@ aside footer *:last-child {
     --gray: #aaa;
     --shadow: #2a2a2a;
     --light-gray: #444;
-  }
-  h1 {
-    background-image: url(/logo-white.7fec831f.svg);
   }
   input:focus {
     box-shadow: 0 0 10em rgba(255, 255, 255, 0.02) inset;
